@@ -1,0 +1,12 @@
+<%- include("partials/header.ejs") %>
+
+<% if(locals.bandName){ %>
+    <h1><%= bandName%></h1>
+<%}else{%>
+    <h1>Generate Band name</h1>
+<%}%>
+<form action="/submit" method="POST">
+  <input type="submit" value="Generate Name">
+</form>
+<!-- Step 3 Add Footer -->
+<%- include("partials/footer.ejs") %>
