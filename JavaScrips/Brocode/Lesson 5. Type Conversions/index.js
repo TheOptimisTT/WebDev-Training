@@ -1,31 +1,30 @@
-// A variable is a container for storing data
-// A variable behaves as if it was the value that it contains
-
-//Two steps:
-// 1. Declaration (var, let /*best practice*/ , const)
-// 2. Assignment (= assignment operator)
+// Type Conversion = Change the datatype of a value to another
+// (String, number, booleans)
 
 
-//number datatype
-let age; // step 1 Declaration
-age = 21; // step 2 Assignment
-let age2 =31; // step1 + step2
-age = age+1;
+/*
+let age = window.prompt("How old are you? "); //String 
 
-//String datatype
-let firstName="Bro"; // "" or ''
-firstName = firstName + " Code";
-//boolean dt
-let student = true; // true or false
+console.log(typeof age);//checks type
+age = Number(age); //Number constructior
+console.log(typeof age);//checks type
+age += 1 ; // int age +1
 
 
-console.log("Hello ",firstName);
-console.log("You are ", age,"years old");
-console.log("Enrolled: ",student);
+console.log("Happy Birthday! You are ", age, " years old");
+*/
 
+let x;
+let y;
+let z;
 
-//manupulating the DOM usuing a <p> with ID
+x = Number("3.14"); // Convert String("3.14") to a Number(3.14) 
+console.log(x, typeof x);
 
-document.getElementById("p1").innerHTML = "Hello " + firstName;
-document.getElementById("p2").innerHTML = "You are " + age + " years old";
-document.getElementById("p3").innerHTML = "Enrolled: " + student;
+y= String(3.14);//Converts Number to String
+console.log(y, typeof y); 
+
+z = Boolean("") //Converts String to Boolean, Default is False!
+                // anything else (not empty string) will be True!
+    // This can be used for checking if the user entered something in a field
+console.log(z, typeof z); 
