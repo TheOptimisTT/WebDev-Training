@@ -7,6 +7,7 @@ let students = ["spongebob","patrick","squidward"];
 
 students.forEach(capitalize); //Only passing the name of the func as an argument no ()
 students.forEach(print);
+
 function capitalize(element,index, array){
     array[index] = element[0].toUpperCase()+element.substring(1);
     //Capitalizes every elements first letter
